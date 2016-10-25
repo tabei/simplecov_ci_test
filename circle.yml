@@ -7,4 +7,4 @@ test:
   pre:
     - bundle exec rspec
   post:
-    - "curl -s -S -X POST --data-urlencode 'payload={\"channel\": \"#test_tabei\", \"username\": \"test-webhook\", \"text\": \"coverage report: $CIRCLE_ARTIFACTS\" }' $SLACK_TEST_HOOK >/dev/null"
+    - "curl -s -S -X POST --data-urlencode \"payload={\"channel\": \"#test_tabei\", \"username\": \"test-webhook\", \"text\": \"coverage report: $CIRCLE_ARTIFACTS\" }\" $SLACK_TEST_HOOK >/dev/null"
