@@ -6,3 +6,5 @@ machine:
 test:
   pre:
     - bundle exec rspec
+  post:
+    - echo "after test"
