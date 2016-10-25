@@ -8,4 +8,4 @@ test:
     - bundle exec rspec
   post:
     - |
-      curl -s -S -X POST --data-urlencode "payload={'channel': '#test_tabei', 'username': 'test-webhook', 'text': 'coverage report: <https://$CIRCLE_BUILD_NUM-70879743-gh.circle-artifacts.com/0$CIRCLE_ARTIFACTS/coverage/index.html|open report :earth_asia: >(build $CIRCLE_BUILD_NUM)' }" $SLACK_TEST_HOOK >/dev/null
+      curl -s -S -X POST --data-urlencode "payload={'channel': '#test_tabei', 'username': 'test-webhook', 'text': ':circleci: coverage report: <https://$CIRCLE_BUILD_NUM-70879743-gh.circle-artifacts.com/0$CIRCLE_ARTIFACTS/coverage/index.html|open report :earth_asia: >(build $CIRCLE_BUILD_NUM)' }" $SLACK_TEST_HOOK >/dev/null
