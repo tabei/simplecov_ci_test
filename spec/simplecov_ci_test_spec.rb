@@ -7,6 +7,6 @@ describe SimplecovCiTest do
   end
 
   it 'does something useful' do
-    expect(true).to eq(true)
+    expect(true).to eq(false)
   end
 end
